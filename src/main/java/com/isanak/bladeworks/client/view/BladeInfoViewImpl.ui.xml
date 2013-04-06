@@ -13,13 +13,6 @@
 	</ui:style>
 
 	<g:FlowPanel>
-		<b:ResponsiveNavbar scrollspy="false" inverse="true">
-			<b:Brand>BladeWorks</b:Brand>
-			<!-- <b:NavCollapse> -->
-			<!-- <b:Nav ui:field="nav" /> -->
-			<!-- </b:NavCollapse> -->
-		</b:ResponsiveNavbar>
-
 		<b:FluidContainer ui:field="container">
 			<b:PageHeader subtext="Excalibur">聖剣 エクスカリバー</b:PageHeader>
 			<b:Emphasis>いま常勝の王は高らかに、手に執る奇跡の真名を謳う。其は約束された勝利の剣</b:Emphasis>
@@ -32,7 +25,7 @@
 					<b:Strong>攻撃力：</b:Strong>
 					<b:Badge>99,999</b:Badge>
 				</b:Paragraph>
-				<b:Paragraph>					
+				<b:Paragraph>
 					<b:Label type="SUCCESS">レア</b:Label>
 					<b:Label type="IMPORTANT">伝説武器</b:Label>
 					<b:Label>対霊体補正</b:Label>
@@ -84,12 +77,6 @@
 			</b:Well>
 
 		</b:FluidContainer>
-
-		<b:Footer>
-			<b:Paragraph>
-				&copy;Isana Kamishiro 2013
-			</b:Paragraph>
-		</b:Footer>
 
 	</g:FlowPanel>
 </ui:UiBinder>

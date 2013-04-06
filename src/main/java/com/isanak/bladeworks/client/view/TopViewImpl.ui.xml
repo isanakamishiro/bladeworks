@@ -2,17 +2,16 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
 	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:b="urn:import:com.github.gwtbootstrap.client.ui">
+	<ui:style>
+		.header {
+			text-align: center;
+			text-shadow: 0 1px 3px rgba(255, 255, 255, .4), 0 0 30px
+				rgba(255, 255, 255, .075);
+		}
+	</ui:style>
 
 	<g:FlowPanel>
-		<b:ResponsiveNavbar scrollspy="false" inverse="true">
-			<b:Brand>BladeWorks</b:Brand>
-			<!-- <b:NavCollapse> -->
-			<!-- <b:Nav ui:field="nav" /> -->
-			<!-- </b:NavCollapse> -->
-		</b:ResponsiveNavbar>
-
-		<b:FluidContainer ui:field="container">
-			<b:Heading size="1">有限の剣製</b:Heading>
+		<b:FluidContainer addStyleNames="{style.header}">
 			<b:Hero>
 				<b:Heading size="1" showOn="DESKTOP" subtext="I am Ben.">体はなめこで出来ている。</b:Heading>
 				<b:Heading size="2" showOn="TABLET" subtext="I am Ben.">体はなめこで出来ている。</b:Heading>
@@ -20,8 +19,10 @@
 				<b:Paragraph>別に、アレを倒してしまっても構わんのだろう？</b:Paragraph>
 				<b:Button size="LARGE" type="PRIMARY" ui:field="bladeCreationButton1">倒すために武器を作ろう</b:Button>
 			</b:Hero>
+		</b:FluidContainer>
 
-			<b:FluidRow>
+		<b:Container ui:field="container">
+			<b:Row>
 				<b:Column size="4">
 					<b:Heading size="3">剣製</b:Heading>
 					<b:Paragraph>体は剣で出来ているような気がするがどうやら気のせいだったようだ。</b:Paragraph>
@@ -40,18 +41,7 @@
 					<b:Button ui:field="AboutButton" icon="DOUBLE_ANGLE_RIGHT"
 						iconPosition="RIGHT">詳細</b:Button>
 				</b:Column>
-			</b:FluidRow>
-
-		</b:FluidContainer>
-
-		<g:HTMLPanel>
-			<hr />
-		</g:HTMLPanel>
-
-		<b:Footer>
-			<b:Paragraph>
-				&copy;Isana Kamishiro 2013
-			</b:Paragraph>
-		</b:Footer>
+			</b:Row>
+		</b:Container>
 	</g:FlowPanel>
 </ui:UiBinder>

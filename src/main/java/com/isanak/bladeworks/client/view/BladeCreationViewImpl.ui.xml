@@ -4,13 +4,6 @@
 	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:b="urn:import:com.github.gwtbootstrap.client.ui">
 
 	<g:FlowPanel>
-		<b:ResponsiveNavbar scrollspy="false" inverse="true">
-			<b:Brand>BladeWorks</b:Brand>
-			<!-- <b:NavCollapse> -->
-			<!-- <b:Nav ui:field="nav" /> -->
-			<!-- </b:NavCollapse> -->
-		</b:ResponsiveNavbar>
-
 		<b:FluidContainer ui:field="container">
 			<b:Heading size="1" showOn="DESKTOP" subtext="trace on.">――――投影、開始</b:Heading>
 			<b:Heading size="2" showOn="TABLET" subtext="trace on.">――――投影、開始</b:Heading>
@@ -52,15 +45,6 @@
 			</b:FluidRow>
 		</b:FluidContainer>
 
-		<g:HTMLPanel>
-			<hr />
-		</g:HTMLPanel>
-
-		<b:Footer>
-			<b:Paragraph>
-				&copy;Isana Kamishiro 2013
-			</b:Paragraph>
-		</b:Footer>
 	</g:FlowPanel>
 
 </ui:UiBinder>
