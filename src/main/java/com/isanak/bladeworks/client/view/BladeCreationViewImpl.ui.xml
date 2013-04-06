@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:b="urn:import:com.github.gwtbootstrap.client.ui"
+	xmlns:m="urn:import:com.googlecode.mgwt.ui.client.widget">
+
+	<g:FlowPanel>
+		<b:ResponsiveNavbar scrollspy="false" inverse="true">
+			<b:Brand>BladeWorks</b:Brand>
+			<!-- <b:NavCollapse> -->
+			<!-- <b:Nav ui:field="nav" /> -->
+			<!-- </b:NavCollapse> -->
+		</b:ResponsiveNavbar>
+
+		<b:FluidContainer ui:field="container">
+			<b:Heading size="1" showOn="DESKTOP" subtext="trace on.">――――投影、開始</b:Heading>
+			<b:Heading size="2" showOn="TABLET" subtext="trace on.">――――投影、開始</b:Heading>
+			<b:Heading size="3" showOn="PHONE" subtext="trace on.">――――投影、開始</b:Heading>
+
+			<b:Thumbnails ui:field="methods">
+				<b:Thumbnail size="6">
+					<b:Heading size="3">一発生成</b:Heading>
+					<b:Paragraph>面倒くさい人どうぞ</b:Paragraph>
+					<b:Paragraph>
+						<b:Button ui:field="startCreationButton" type="PRIMARY">練成開始</b:Button>
+					</b:Paragraph>
+				</b:Thumbnail>
+				<b:Thumbnail size="6">
+					<b:Heading size="3">入力生成</b:Heading>
+					<b:Paragraph>工事中。</b:Paragraph>
+<!-- 					<b:Paragraph> -->
+<!-- 						<b:Button type="PRIMARY">練成開始</b:Button> -->
+<!-- 					</b:Paragraph> -->
+				</b:Thumbnail>
+			</b:Thumbnails>
+
+			<b:FluidRow ui:field="spelling" visible="false">
+				<b:Column size="10" offset="1">
+					<b:Well>
+						<b:Heading size="5" subtext="I am the bone of my sword.">体は剣で出来ている。</b:Heading>
+						<b:Heading size="5" subtext="Steel is my body, and fire is my blood.">血潮は鉄で 心は硝子。</b:Heading>
+						<b:Heading size="5" subtext="I have created over a thousand blades.">幾たびの戦場を越えて不敗。</b:Heading>
+						<b:Heading size="5" subtext="Unknown to Death.">ただの一度も敗走はなく、</b:Heading>
+						<b:Heading size="5" subtext="Nor known to Life.">ただの一度も理解されない。</b:Heading>
+						<b:Heading size="5" subtext="Have withstood pain to create many weapons.">彼の者は常に独り　剣の丘で勝利に酔う。</b:Heading>
+						<b:Heading size="5" subtext="Yet, those hands will never hold anything.">故に、生涯に意味はなく。</b:Heading>
+						<b:Heading size="5" subtext="So as I pray, unlimited blade works.">その体は、きっと剣で出来ていた。</b:Heading>
+						<b:Paragraph>
+						<b:ProgressBar text="詠唱中" percent="100" type="ANIMATED" />
+						</b:Paragraph>
+					</b:Well>
+				</b:Column>
+			</b:FluidRow>
+		</b:FluidContainer>
+
+		<g:HTMLPanel>
+			<hr />
+		</g:HTMLPanel>
+
+		<b:Footer>
+			<b:Paragraph>
+				&copy;Isana Kamishiro 2013
+			</b:Paragraph>
+		</b:Footer>
+	</g:FlowPanel>
+
+</ui:UiBinder>

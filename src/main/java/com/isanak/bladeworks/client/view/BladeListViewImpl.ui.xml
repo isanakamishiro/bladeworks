@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:b="urn:import:com.github.gwtbootstrap.client.ui"
+	xmlns:m="urn:import:com.googlecode.mgwt.ui.client.widget">
+
+	<ui:style>
+	</ui:style>
+
+	<g:FlowPanel>
+		<b:ResponsiveNavbar scrollspy="false" inverse="true">
+			<b:Brand>BladeWorks</b:Brand>
+			<!-- <b:NavCollapse> -->
+			<!-- <b:Nav ui:field="nav" /> -->
+			<!-- </b:NavCollapse> -->
+		</b:ResponsiveNavbar>
+
+		<b:Container ui:field="container">
+			<b:Row>
+				<b:Column size="12">
+					<b:Thumbnails>
+						<b:Thumbnail size="4">
+							<b:Caption>
+								<b:Heading size="3" subtext="Excalibur">聖剣 エクスカリバー</b:Heading>
+								<b:Emphasis>いま常勝の王は高らかに、手に執る奇跡の真名を謳う。其は約束された勝利の剣</b:Emphasis>
+								<hr />
+								<b:Paragraph>
+									<b:Strong>攻撃力：</b:Strong>
+									<b:Badge>99,999</b:Badge>
+									<b:Label type="SUCCESS">レア</b:Label>
+									<b:Label type="IMPORTANT">伝説武器</b:Label>
+									<b:Label>対霊体補正</b:Label>
+									<b:Label>事象確率補正</b:Label>
+								</b:Paragraph>
+								<b:Button block="true" type="PRIMARY">View</b:Button>
+							</b:Caption>
+						</b:Thumbnail>
+						<b:Thumbnail size="4">
+							<b:Caption>
+								<b:Heading size="3" subtext="Excalibur">聖剣 エクスカリバー</b:Heading>
+								<b:Emphasis>いま常勝の王は高らかに、手に執る奇跡の真名を謳う。其は約束された勝利の剣</b:Emphasis>
+								<hr />
+								<b:Paragraph>
+									<b:Strong>攻撃力：</b:Strong>
+									<b:Badge>99,999</b:Badge>
+									<b:Label type="SUCCESS">レア</b:Label>
+									<b:Label type="IMPORTANT">伝説武器</b:Label>
+									<b:Label>対霊体補正</b:Label>
+									<b:Label>事象確率補正</b:Label>
+								</b:Paragraph>
+								<b:Button block="true" type="PRIMARY">View</b:Button>
+							</b:Caption>
+						</b:Thumbnail>
+						<b:Thumbnail size="4">
+							<b:Caption>
+								<b:Heading size="3" subtext="Excalibur">聖剣 エクスカリバー</b:Heading>
+								<b:Emphasis>いま常勝の王は高らかに、手に執る奇跡の真名を謳う。其は約束された勝利の剣</b:Emphasis>
+								<hr />
+								<b:Paragraph>
+									<b:Strong>攻撃力：</b:Strong>
+									<b:Badge>99,999</b:Badge>
+									<b:Label type="SUCCESS">レア</b:Label>
+									<b:Label type="IMPORTANT">伝説武器</b:Label>
+									<b:Label>対霊体補正</b:Label>
+									<b:Label>事象確率補正</b:Label>
+								</b:Paragraph>
+								<b:Button block="true" type="PRIMARY">View</b:Button>
+							</b:Caption>
+						</b:Thumbnail>
+					</b:Thumbnails>
+					<b:Thumbnails>
+						<b:Thumbnail size="4">
+							<b:Caption>
+								<b:Heading size="3" subtext="Excalibur">聖剣 エクスカリバー</b:Heading>
+								<b:Emphasis>いま常勝の王は高らかに、手に執る奇跡の真名を謳う。其は約束された勝利の剣</b:Emphasis>
+								<hr />
+								<b:Paragraph>
+									<b:Strong>攻撃力：</b:Strong>
+									<b:Badge>99,999</b:Badge>
+									<b:Label type="SUCCESS">レア</b:Label>
+									<b:Label type="IMPORTANT">伝説武器</b:Label>
+									<b:Label>対霊体補正</b:Label>
+									<b:Label>事象確率補正</b:Label>
+								</b:Paragraph>
+								<b:Button block="true" type="PRIMARY">View</b:Button>
+							</b:Caption>
+						</b:Thumbnail>
+						<b:Thumbnail size="4">
+							<b:Caption>
+								<b:Heading size="3" subtext="Excalibur">聖剣 エクスカリバー</b:Heading>
+								<b:Emphasis>いま常勝の王は高らかに、手に執る奇跡の真名を謳う。其は約束された勝利の剣</b:Emphasis>
+								<hr />
+								<b:Paragraph>
+									<b:Strong>攻撃力：</b:Strong>
+									<b:Badge>99,999</b:Badge>
+									<b:Label type="SUCCESS">レア</b:Label>
+									<b:Label type="IMPORTANT">伝説武器</b:Label>
+									<b:Label>対霊体補正</b:Label>
+									<b:Label>事象確率補正</b:Label>
+								</b:Paragraph>
+								<b:Button block="true" type="PRIMARY">View</b:Button>
+							</b:Caption>
+						</b:Thumbnail>
+						<b:Thumbnail size="4">
+							<b:Caption>
+								<b:Heading size="3" subtext="Excalibur">聖剣 エクスカリバー</b:Heading>
+								<b:Emphasis>いま常勝の王は高らかに、手に執る奇跡の真名を謳う。其は約束された勝利の剣</b:Emphasis>
+								<hr />
+								<b:Paragraph>
+									<b:Strong>攻撃力：</b:Strong>
+									<b:Badge>99,999</b:Badge>
+									<b:Label type="SUCCESS">レア</b:Label>
+									<b:Label type="IMPORTANT">伝説武器</b:Label>
+									<b:Label>対霊体補正</b:Label>
+									<b:Label>事象確率補正</b:Label>
+								</b:Paragraph>
+								<b:Button block="true" type="PRIMARY">View</b:Button>
+							</b:Caption>
+						</b:Thumbnail>
+					</b:Thumbnails>
+				</b:Column>
+			</b:Row>
+		</b:Container>
+	</g:FlowPanel>
+</ui:UiBinder>
