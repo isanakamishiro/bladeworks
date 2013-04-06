@@ -18,7 +18,6 @@ public class AppModule extends AbstractGinModule {
 	@Override
 	protected void configure() {
 		install(new MvpModule());
-		install(new MGWTModule());
 
 		bind(TopView.class).to(TopViewImpl.class).in(Singleton.class);
 		bind(BladeCreationView.class).to(BladeCreationViewImpl.class).in(

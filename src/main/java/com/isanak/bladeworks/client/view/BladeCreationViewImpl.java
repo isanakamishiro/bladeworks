@@ -22,7 +22,6 @@ import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.HasVisibility;
 import com.google.gwt.user.client.ui.Widget;
-import com.isanak.bladeworks.shared.model.BladeInfo;
 
 /**
  * Sample implementation of {@link BladeCreationView}.

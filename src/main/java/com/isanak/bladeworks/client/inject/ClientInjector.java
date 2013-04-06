@@ -1,16 +1,14 @@
 package com.isanak.bladeworks.client.inject;
 
+import com.google.gwt.activity.shared.ActivityManager;
 import com.google.gwt.inject.client.GinModules;
 import com.google.gwt.inject.client.Ginjector;
 import com.google.gwt.place.shared.Place;
 import com.google.gwt.place.shared.PlaceController;
+import com.google.gwt.place.shared.PlaceHistoryHandler;
+import com.google.gwt.user.client.ui.SimplePanel;
 import com.google.inject.name.Named;
 import com.google.web.bindery.event.shared.EventBus;
-import com.googlecode.mgwt.mvp.client.AnimatableDisplay;
-import com.googlecode.mgwt.mvp.client.AnimatingActivityManager;
-import com.googlecode.mgwt.mvp.client.history.MGWTPlaceHistoryHandler;
-import com.googlecode.mgwt.ui.client.MGWTSettings;
-import com.googlecode.mgwt.ui.client.theme.MGWTTheme;
 import com.isanak.bladeworks.client.place.BladeCreationPlace;
 import com.isanak.bladeworks.client.place.BladeInfoPlace;
 import com.isanak.bladeworks.client.place.BladeListPlace;
@@ -28,37 +26,34 @@ public interface ClientInjector extends Ginjector {
 
 	PlaceController getPlaceController();
 
-	AnimatableDisplay getMainDisplay();
-
-	AnimatingActivityManager getActivityManager();
-
-	MGWTPlaceHistoryHandler getPlaceHistoryHandler();
-
-	MGWTSettings getMGWTSettings();
+	ActivityManager getActivityManager();
 	
-	MGWTTheme getMGWTTheme();
-
+	PlaceHistoryHandler getPlaceHistoryHandler();
+	
+	@Named("contents")
+	SimplePanel getContentsPanel();
+	
 	@Named("default")
 	Place getDefaultPlace();
 
 	// View Injection Method
-	
+
 	TopView getTopView();
-	
+
 	BladeCreationView getBladeCreationView();
-	
+
 	BladeInfoView getBladeInfoView();
-	
+
 	BladeListView getBladeListView();
 
 	BladeList2View getBladeList2View();
 
 	// Place Injection Method
 	TopPlace getTopPlace();
-	
+
 	BladeCreationPlace getBladeCreationPlace();
-	
+
 	BladeInfoPlace getBladeInfoPlace();
-	
+
 	BladeListPlace getBladeListPlace();
 }
