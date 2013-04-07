@@ -27,12 +27,12 @@ public interface ClientInjector extends Ginjector {
 	PlaceController getPlaceController();
 
 	ActivityManager getActivityManager();
-	
+
 	PlaceHistoryHandler getPlaceHistoryHandler();
-	
+
 	@Named("contents")
 	SimplePanel getContentsPanel();
-	
+
 	@Named("default")
 	Place getDefaultPlace();
 
@@ -51,9 +51,17 @@ public interface ClientInjector extends Ginjector {
 	// Place Injection Method
 	TopPlace getTopPlace();
 
+	TopPlace.Tokenizer getTopTokenizer();
+
 	BladeCreationPlace getBladeCreationPlace();
+
+	BladeCreationPlace.Tokenizer getBladeCreationTokenizer();
 
 	BladeInfoPlace getBladeInfoPlace();
 
+	BladeInfoPlace.Tokenizer getBladeInfoTokenizer();
+
 	BladeListPlace getBladeListPlace();
+
+	BladeListPlace.Tokenizer getBladeListTokenizer();
 }

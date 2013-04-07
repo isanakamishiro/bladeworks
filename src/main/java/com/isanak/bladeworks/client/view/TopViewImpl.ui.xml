@@ -17,29 +17,49 @@
 				<b:Heading size="2" showOn="TABLET" subtext="I am Ben.">体はなめこで出来ている。</b:Heading>
 				<b:Heading size="3" showOn="PHONE" subtext="I am Ben.">体はなめこで出来ている。</b:Heading>
 				<b:Paragraph>別に、アレを倒してしまっても構わんのだろう？</b:Paragraph>
-				<b:Button size="LARGE" type="PRIMARY" ui:field="bladeCreationButton1">倒すために武器を作ろう</b:Button>
+				<b:Button size="LARGE" type="PRIMARY" ui:field="bladeCreationButton1">武器を作ろう</b:Button>
 			</b:Hero>
 		</b:FluidContainer>
 
 		<b:Container ui:field="container">
 			<b:Row>
-				<b:Column size="4">
-					<b:Heading size="3">剣製</b:Heading>
-					<b:Paragraph>体は剣で出来ているような気がするがどうやら気のせいだったようだ。</b:Paragraph>
-					<b:Button ui:field="bladeCreationButton2" icon="DOUBLE_ANGLE_RIGHT"
-						iconPosition="RIGHT">詳細</b:Button>
-				</b:Column>
-				<b:Column size="4">
-					<b:Heading size="3">一覧</b:Heading>
-					<b:Paragraph>おまえは今まで食ったパンの枚数をおぼえているのか？</b:Paragraph>
-					<b:Button ui:field="bladeListButton" icon="DOUBLE_ANGLE_RIGHT"
-						iconPosition="RIGHT">詳細</b:Button>
-				</b:Column>
-				<b:Column size="4">
-					<b:Heading size="3">About</b:Heading>
-					<b:Paragraph>「ページ分けする必要があるのか？」「さあ・・・」</b:Paragraph>
-					<b:Button ui:field="AboutButton" icon="DOUBLE_ANGLE_RIGHT"
-						iconPosition="RIGHT">詳細</b:Button>
+				<b:Column size="12">
+					<b:Thumbnails>
+						<b:Thumbnail size="4">
+							<b:Caption>
+								<b:Heading size="3" subtext="Blade Works">剣製</b:Heading>
+								<hr />
+								<b:Paragraph>
+									体は剣で出来ているような気がするがどうやら気のせいだったようだ。
+								</b:Paragraph>
+								<b:Button ui:field="bladeCreationButton2" icon="DOUBLE_ANGLE_RIGHT"
+									iconPosition="RIGHT">詳細</b:Button>
+							</b:Caption>
+						</b:Thumbnail>
+						<b:Thumbnail size="4">
+							<b:Caption>
+								<b:Heading size="3" subtext="Blade List">一覧</b:Heading>
+								<hr />
+								<b:Paragraph>
+									おまえは今まで食ったパンの枚数をおぼえているのか？
+								</b:Paragraph>
+								<b:Button ui:field="bladeListButton" icon="DOUBLE_ANGLE_RIGHT"
+									iconPosition="RIGHT">詳細</b:Button>
+							</b:Caption>
+						</b:Thumbnail>
+						<b:Thumbnail size="4">
+							<b:Caption>
+								<b:Heading size="3" subtext="About">補足</b:Heading>
+								<hr />
+								<b:Paragraph>
+									「ページ分けする必要があるのか？」「さあ・・・」
+								</b:Paragraph>
+								<b:Button ui:field="AboutButton" icon="DOUBLE_ANGLE_RIGHT"
+									iconPosition="RIGHT">詳細</b:Button>
+							</b:Caption>
+						</b:Thumbnail>
+
+					</b:Thumbnails>
 				</b:Column>
 			</b:Row>
 		</b:Container>

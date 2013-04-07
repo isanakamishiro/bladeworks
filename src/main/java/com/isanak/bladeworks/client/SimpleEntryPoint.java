@@ -14,10 +14,9 @@ public class SimpleEntryPoint implements EntryPoint {
 				
 		injector.getActivityManager();
 		
-//		RootPanel.get("contents").add(injector.getContentsPanel());
+		RootPanel.get("contents").add(injector.getContentsPanel());
 		
-//		injector.getPlaceHistoryHandler().handleCurrentHistory();
-		RootPanel.get("contents").add(injector.getTopView());
+		injector.getPlaceHistoryHandler().handleCurrentHistory();
 		
 	}
 

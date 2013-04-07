@@ -54,7 +54,11 @@ public class BladeCreationViewImpl extends Composite implements
 	public void onStartCreationClick(ClickEvent event) {
 		methods.setVisible(false);
 		spelling.setVisible(true);
-		
+
 		listener.goToBladeInfo();
+		
+		methods.setVisible(true);
+		spelling.setVisible(false);
+		
 	}
 }

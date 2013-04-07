@@ -30,7 +30,7 @@ import com.isanak.bladeworks.client.presenter.BladeCreationActivity;
  * corresponding to each {@link Place} in your app.
  */
 public class BladeCreationPlace extends ActivityPlace<BladeCreationActivity> {
-
+	
 	@Prefix("creation")
 	public static class Tokenizer extends ActivityPlace.Tokenizer<BladeCreationPlace>
 			implements PlaceTokenizer<BladeCreationPlace> {

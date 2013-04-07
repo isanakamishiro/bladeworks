@@ -7,7 +7,7 @@
 	<inherits name="com.google.gwt.activity.Activity" />
 	<inherits name="com.google.gwt.inject.Inject" />
 	<inherits name="com.github.gwtbootstrap.Bootstrap" />
-	<inherits name="com.google.gwt.place.Place"/>
+	<inherits name="com.google.gwt.place.Place" />
 
 	<add-linker name="xsiframe" />
 	<set-configuration-property name="devModeRedirectEnabled"
@@ -24,5 +24,6 @@
 	</source>
 
 	<entry-point class="com.isanak.bladeworks.client.BladeWorks" />
-<!-- 	<entry-point class="com.isanak.bladeworks.client.SimpleEntryPoint" /> -->
+	<!-- <entry-point class="com.isanak.bladeworks.client.SimpleEntryPoint" 
+		/> -->
 </module>

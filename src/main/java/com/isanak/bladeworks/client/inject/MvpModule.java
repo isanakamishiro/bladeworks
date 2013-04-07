@@ -25,14 +25,22 @@ public class MvpModule extends AbstractGinModule {
 				TopPlace.class);
 		// bind(Place.class).annotatedWith(Names.named("default")).to(
 		// BladeCreationPlace.class);
-//		bind(Place.class).annotatedWith(Names.named("default")).to(
-//				BladeListPlace.class);
+		// bind(Place.class).annotatedWith(Names.named("default")).to(
+		// BladeListPlace.class);
 	}
 
 	@Provides
 	@Singleton
 	public EventBus eventBus() {
 		return new SimpleEventBus();
+	}
+
+	@Provides
+	@Singleton
+	@Named("contents")
+	public SimplePanel contentsPanel() {
+		SimplePanel simplePanle = new SimplePanel();
+		return simplePanle;
 	}
 
 	@Provides
@@ -49,14 +57,6 @@ public class MvpModule extends AbstractGinModule {
 
 	@Provides
 	@Singleton
-	@Named("contents")
-	public SimplePanel contentsPanel() {
-		SimplePanel simplePanle = new SimplePanel();
-		return simplePanle;
-	}
-
-	@Provides
-	@Singleton
 	public ActivityManager activityManager(ActivityMapper activityMapper,
 			EventBus eventBus, @Named("contents") SimplePanel simplePanel) {
 		ActivityManager activityManager = new ActivityManager(activityMapper,
@@ -69,7 +69,8 @@ public class MvpModule extends AbstractGinModule {
 	@Singleton
 	public PlaceHistoryHandler placeHistoryHandler(
 			AppPlaceHistoryMapper mapper, PlaceController placeController,
-			EventBus eventBus, @Named("default") Place defaultPlace, ClientInjector injector) {
+			EventBus eventBus, @Named("default") Place defaultPlace,
+			ClientInjector injector) {
 
 		mapper.setFactory(injector);
 
