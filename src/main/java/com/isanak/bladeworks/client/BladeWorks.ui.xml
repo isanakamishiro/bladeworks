@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:b="urn:import:com.github.gwtbootstrap.client.ui">
+	<ui:style>
+		.footer {
+			text-align: center;
+			padding: 30px 0;
+			margin-top: 70px;
+			border-top: 1px solid #e5e5e5;
+			background-color: #f5f5f5;
+		}
+		
+		.footer p {
+			margin-bottom: 0;
+			color: #777;
+		}
+	</ui:style>
+
+	<g:FlowPanel>
+		<b:ResponsiveNavbar position="TOP" scrollspy="false"
+			inverse="true">
+			<b:Brand ui:field="brand">BladeWorks</b:Brand>
+		</b:ResponsiveNavbar>
+
+		<g:SimplePanel ui:field="main" />
+
+		<b:Footer addStyleNames="{style.footer}">
+			<b:Container>
+				<b:Paragraph>
+					&copy;Isana Kamishiro 2013
+				</b:Paragraph>
+			</b:Container>
+		</b:Footer>
+	</g:FlowPanel>
+</ui:UiBinder>
