@@ -19,14 +19,14 @@ import com.google.gwt.event.shared.EventBus;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import com.google.inject.Inject;
 import com.isanak.bladeworks.client.inject.ClientInjector;
-import com.isanak.bladeworks.client.view.BladeList2View;
+import com.isanak.bladeworks.client.view.BladeListView;
 
 /**
  * Activities are started and stopped by an ActivityManager associated with a
  * container Widget.
  */
 public class BladeListActivity extends AbstractActivity implements
-		BladeList2View.Presenter {
+		BladeListView.Presenter {
 
 	private final ClientInjector injector;
 
@@ -37,8 +37,7 @@ public class BladeListActivity extends AbstractActivity implements
 
 	@Override
 	public void start(AcceptsOneWidget containerWidget, EventBus eventBus) {
-		// BladeListView view = injector.getBladeListView();
-		BladeList2View view = injector.getBladeList2View();
+		BladeListView view = injector.getBladeListView();
 		view.setPresenter(this);
 		containerWidget.setWidget(view.asWidget());
 	}

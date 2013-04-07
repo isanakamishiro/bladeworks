@@ -15,7 +15,6 @@ import com.isanak.bladeworks.client.place.BladeListPlace;
 import com.isanak.bladeworks.client.place.TopPlace;
 import com.isanak.bladeworks.client.view.BladeCreationView;
 import com.isanak.bladeworks.client.view.BladeInfoView;
-import com.isanak.bladeworks.client.view.BladeList2View;
 import com.isanak.bladeworks.client.view.BladeListView;
 import com.isanak.bladeworks.client.view.TopView;
 
@@ -45,8 +44,6 @@ public interface ClientInjector extends Ginjector {
 	BladeInfoView getBladeInfoView();
 
 	BladeListView getBladeListView();
-
-	BladeList2View getBladeList2View();
 
 	// Place Injection Method
 	TopPlace getTopPlace();

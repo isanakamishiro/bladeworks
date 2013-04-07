@@ -15,18 +15,18 @@ import com.google.web.bindery.event.shared.EventBus;
 import com.google.web.bindery.event.shared.SimpleEventBus;
 import com.isanak.bladeworks.client.framework.AppActivityMapper;
 import com.isanak.bladeworks.client.framework.AppPlaceHistoryMapper;
-import com.isanak.bladeworks.client.place.TopPlace;
+import com.isanak.bladeworks.client.place.BladeListPlace;
 
 public class MvpModule extends AbstractGinModule {
 
 	@Override
 	protected void configure() {
-		bind(Place.class).annotatedWith(Names.named("default")).to(
-				TopPlace.class);
+		// bind(Place.class).annotatedWith(Names.named("default")).to(
+		// TopPlace.class);
 		// bind(Place.class).annotatedWith(Names.named("default")).to(
 		// BladeCreationPlace.class);
-		// bind(Place.class).annotatedWith(Names.named("default")).to(
-		// BladeListPlace.class);
+		bind(Place.class).annotatedWith(Names.named("default")).to(
+				BladeListPlace.class);
 	}
 
 	@Provides
