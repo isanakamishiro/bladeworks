@@ -12,17 +12,18 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *******************************************************************************/
-package com.isanak.bladeworks.client.place;
+package com.isanak.bladeworks.client.bladeinfo;
 
-import com.google.gwt.place.shared.PlaceTokenizer;
-import com.google.gwt.place.shared.Prefix;
-import com.isanak.bladeworks.client.framework.ActivityPlace;
-import com.isanak.bladeworks.client.presenter.BladeListActivity;
+import com.google.gwt.user.client.ui.IsWidget;
 
-public class BladeListPlace extends ActivityPlace<BladeListActivity>{
-	  
-		@Prefix("list")
-		public static class Tokenizer extends ActivityPlace.Tokenizer<BladeListPlace>
-				implements PlaceTokenizer<BladeListPlace> {
-		}
+/**
+ * View base interface.
+ * Extends IsWidget so a view impl can easily provide its container widget.
+ */
+public interface BladeInfoView extends IsWidget {
+  
+	void setPresenter(Presenter listener);
+
+	public interface Presenter {
+	}
 }

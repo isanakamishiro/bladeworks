@@ -12,18 +12,23 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *******************************************************************************/
-package com.isanak.bladeworks.client.view;
+package com.isanak.bladeworks.client.bladecreation;
 
 import com.google.gwt.user.client.ui.IsWidget;
+import com.isanak.bladeworks.shared.model.BladeInfo;
 
 /**
  * View base interface.
  * Extends IsWidget so a view impl can easily provide its container widget.
  */
-public interface BladeListView extends IsWidget {
+public interface BladeCreationView extends IsWidget {
   
 	void setPresenter(Presenter listener);
 
 	public interface Presenter {
+		
+		public BladeInfo createNewBlade();
+		
+		public void goToBladeInfo();
 	}
 }

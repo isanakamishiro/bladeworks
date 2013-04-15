@@ -9,14 +9,14 @@ import com.google.gwt.place.shared.PlaceHistoryHandler;
 import com.google.gwt.user.client.ui.SimplePanel;
 import com.google.inject.name.Named;
 import com.google.web.bindery.event.shared.EventBus;
-import com.isanak.bladeworks.client.place.BladeCreationPlace;
-import com.isanak.bladeworks.client.place.BladeInfoPlace;
-import com.isanak.bladeworks.client.place.BladeListPlace;
-import com.isanak.bladeworks.client.place.TopPlace;
-import com.isanak.bladeworks.client.view.BladeCreationView;
-import com.isanak.bladeworks.client.view.BladeInfoView;
-import com.isanak.bladeworks.client.view.BladeListView;
-import com.isanak.bladeworks.client.view.TopView;
+import com.isanak.bladeworks.client.bladecreation.BladeCreationPlace;
+import com.isanak.bladeworks.client.bladecreation.BladeCreationView;
+import com.isanak.bladeworks.client.bladeinfo.BladeInfoPlace;
+import com.isanak.bladeworks.client.bladeinfo.BladeInfoView;
+import com.isanak.bladeworks.client.bladelist.BladeListPlace;
+import com.isanak.bladeworks.client.bladelist.BladeListView;
+import com.isanak.bladeworks.client.top.TopPlace;
+import com.isanak.bladeworks.client.top.TopView;
 
 @GinModules(AppModule.class)
 public interface ClientInjector extends Ginjector {

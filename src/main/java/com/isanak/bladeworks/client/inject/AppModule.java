@@ -2,14 +2,14 @@ package com.isanak.bladeworks.client.inject;
 
 import com.google.gwt.inject.client.AbstractGinModule;
 import com.google.inject.Singleton;
-import com.isanak.bladeworks.client.view.BladeCreationView;
-import com.isanak.bladeworks.client.view.BladeCreationViewImpl;
-import com.isanak.bladeworks.client.view.BladeInfoView;
-import com.isanak.bladeworks.client.view.BladeInfoViewImpl;
-import com.isanak.bladeworks.client.view.BladeListView;
-import com.isanak.bladeworks.client.view.BladeListViewImpl;
-import com.isanak.bladeworks.client.view.TopView;
-import com.isanak.bladeworks.client.view.TopViewImpl;
+import com.isanak.bladeworks.client.bladecreation.BladeCreationView;
+import com.isanak.bladeworks.client.bladecreation.BladeCreationViewImpl;
+import com.isanak.bladeworks.client.bladeinfo.BladeInfoView;
+import com.isanak.bladeworks.client.bladeinfo.BladeInfoViewImpl;
+import com.isanak.bladeworks.client.bladelist.BladeListView;
+import com.isanak.bladeworks.client.bladelist.BladeListViewImpl;
+import com.isanak.bladeworks.client.top.TopView;
+import com.isanak.bladeworks.client.top.TopViewImpl;
 
 public class AppModule extends AbstractGinModule {
 

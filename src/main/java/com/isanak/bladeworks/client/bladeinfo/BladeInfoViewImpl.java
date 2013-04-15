@@ -12,18 +12,32 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *******************************************************************************/
-package com.isanak.bladeworks.client.view;
+package com.isanak.bladeworks.client.bladeinfo;
 
-import com.google.gwt.user.client.ui.IsWidget;
+import com.google.gwt.core.client.GWT;
+import com.google.gwt.uibinder.client.UiBinder;
+import com.google.gwt.user.client.ui.Composite;
+import com.google.gwt.user.client.ui.Widget;
 
 /**
- * View base interface.
- * Extends IsWidget so a view impl can easily provide its container widget.
+ * Sample implementation of {@link BladeInfoView}.
  */
-public interface BladeInfoView extends IsWidget {
-  
-	void setPresenter(Presenter listener);
+public class BladeInfoViewImpl extends Composite implements BladeInfoView {
 
-	public interface Presenter {
+	interface Binder extends UiBinder<Widget, BladeInfoViewImpl> {
 	}
+
+	private static final Binder binder = GWT.create(Binder.class);
+
+	private Presenter listener;
+
+	public BladeInfoViewImpl() {
+		initWidget(binder.createAndBindUi(this));
+	}
+
+	@Override
+	public void setPresenter(Presenter listener) {
+		this.listener = listener;
+	}
+
 }

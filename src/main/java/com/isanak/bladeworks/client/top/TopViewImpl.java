@@ -1,4 +1,4 @@
-package com.isanak.bladeworks.client.view;
+package com.isanak.bladeworks.client.top;
 
 import com.github.gwtbootstrap.client.ui.Button;
 import com.google.gwt.core.client.GWT;
@@ -37,4 +37,10 @@ public class TopViewImpl extends Composite implements TopView {
 	public void onBladeCreationButtonClick(ClickEvent event) {
 		listener.goToBladeCreation();
 	}
+	
+	@UiHandler({"bladeListButton"})
+	public void onBladeListButtonClick(ClickEvent event) {
+		listener.goToBladeList();
+	}
+
 }

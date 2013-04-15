@@ -12,14 +12,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *******************************************************************************/
-package com.isanak.bladeworks.client.presenter;
+package com.isanak.bladeworks.client.bladelist;
 
 import com.google.gwt.activity.shared.AbstractActivity;
 import com.google.gwt.event.shared.EventBus;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import com.google.inject.Inject;
 import com.isanak.bladeworks.client.inject.ClientInjector;
-import com.isanak.bladeworks.client.view.BladeListView;
 
 /**
  * Activities are started and stopped by an ActivityManager associated with a

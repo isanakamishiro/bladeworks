@@ -13,9 +13,9 @@ import com.google.inject.name.Named;
 import com.google.inject.name.Names;
 import com.google.web.bindery.event.shared.EventBus;
 import com.google.web.bindery.event.shared.SimpleEventBus;
+import com.isanak.bladeworks.client.bladelist.BladeListPlace;
 import com.isanak.bladeworks.client.framework.AppActivityMapper;
 import com.isanak.bladeworks.client.framework.AppPlaceHistoryMapper;
-import com.isanak.bladeworks.client.place.BladeListPlace;
 
 public class MvpModule extends AbstractGinModule {
 

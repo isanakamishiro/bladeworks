@@ -12,27 +12,24 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *******************************************************************************/
-package com.isanak.bladeworks.client.place;
+package com.isanak.bladeworks.client.bladeinfo;
 
 import com.google.gwt.place.shared.Place;
 import com.google.gwt.place.shared.PlaceHistoryHandler;
 import com.google.gwt.place.shared.PlaceTokenizer;
 import com.google.gwt.place.shared.Prefix;
 import com.isanak.bladeworks.client.framework.ActivityPlace;
-import com.isanak.bladeworks.client.presenter.BladeCreationActivity;
-
 
 /**
- * A place object representing a particular state of the UI. A Place can be
- * converted to and from a URL history token by defining a
- * {@link PlaceTokenizer} for each {@link Place}, and the
- * {@link PlaceHistoryHandler} automatically updates the browser URL
- * corresponding to each {@link Place} in your app.
+ * A place object representing a particular state of the UI. A Place can be converted to and from a
+ * URL history token by defining a {@link PlaceTokenizer} for each {@link Place}, and the 
+ * {@link PlaceHistoryHandler} automatically updates the browser URL corresponding to each 
+ * {@link Place} in your app.
  */
-public class BladeCreationPlace extends ActivityPlace<BladeCreationActivity> {
-	
-	@Prefix("creation")
-	public static class Tokenizer extends ActivityPlace.Tokenizer<BladeCreationPlace>
-			implements PlaceTokenizer<BladeCreationPlace> {
+public class BladeInfoPlace extends ActivityPlace<BladeInfoActivity>{
+  
+	@Prefix("info")
+	public static class Tokenizer extends ActivityPlace.Tokenizer<BladeInfoPlace>
+			implements PlaceTokenizer<BladeInfoPlace> {
 	}
 }

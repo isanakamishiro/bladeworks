@@ -1,9 +1,8 @@
-package com.isanak.bladeworks.client.place;
+package com.isanak.bladeworks.client.top;
 
 import com.google.gwt.place.shared.PlaceTokenizer;
 import com.google.gwt.place.shared.Prefix;
 import com.isanak.bladeworks.client.framework.ActivityPlace;
-import com.isanak.bladeworks.client.presenter.TopActivity;
 
 public class TopPlace extends ActivityPlace<TopActivity> {
 	@Prefix("top")

@@ -1,11 +1,10 @@
-package com.isanak.bladeworks.client.presenter;
+package com.isanak.bladeworks.client.top;
 
 import com.google.gwt.activity.shared.AbstractActivity;
 import com.google.gwt.event.shared.EventBus;
 import com.google.gwt.user.client.ui.AcceptsOneWidget;
 import com.google.inject.Inject;
 import com.isanak.bladeworks.client.inject.ClientInjector;
-import com.isanak.bladeworks.client.view.TopView;
 
 public class TopActivity extends AbstractActivity implements TopView.Presenter {
 
@@ -25,7 +24,20 @@ public class TopActivity extends AbstractActivity implements TopView.Presenter {
 
 	@Override
 	public void goToBladeCreation() {
-		injector.getPlaceController().goTo(injector.getBladeCreationPlace().init("creation"));
+		injector.getPlaceController().goTo(injector.getBladeCreationPlace());
 	}
+
+	@Override
+	public void goToBladeList() {
+		injector.getPlaceController().goTo(injector.getBladeListPlace());		
+	}
+
+	@Override
+	public void goToAbout() {
+		// TODO 自動生成されたメソッド・スタブ
+		
+	}
+	
+	
 
 }
