@@ -23,7 +23,15 @@
 		<exclude name="**/*Test.java" />
 	</source>
 
-	<entry-point class="com.isanak.bladeworks.client.BladeWorks" />
-	<!-- <entry-point class="com.isanak.bladeworks.client.SimpleEntryPoint" 
-		/> -->
+<!-- 	<replace-with -->
+<!-- 		class="com.github.isanakamishiro.bladeworks.client.resources.CustomStrapConfigurator"> -->
+<!-- 		<when-type-is class="com.github.gwtbootstrap.client.ui.config.Configurator" /> -->
+<!-- 	</replace-with> -->
+
+<!-- 	<public path="client/resources"> -->
+<!-- 		<exclude name="** /*.java" /> -->
+<!-- 		<exclude name="** /*.class" /> -->
+<!-- 	</public> -->
+
+	<entry-point class="com.github.isanakamishiro.bladeworks.client.BladeWorks" />
 </module>

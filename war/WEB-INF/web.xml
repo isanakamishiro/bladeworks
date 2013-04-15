@@ -6,7 +6,7 @@
 
 	<context-param>
 		<param-name>slim3.rootPackage</param-name>
-		<param-value>com.isanak.bladeworks</param-value>
+		<param-value>com.github.isanakamishiro.bladeworks</param-value>
 	</context-param>
 	<context-param>
 		<param-name>javax.servlet.jsp.jstl.fmt.localizationContext</param-name>

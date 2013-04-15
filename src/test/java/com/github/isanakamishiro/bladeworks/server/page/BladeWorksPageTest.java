@@ -1,4 +1,4 @@
-package com.isanak.bladeworks.server.page;
+package com.github.isanakamishiro.bladeworks.server.page;
 
 import static org.hamcrest.CoreMatchers.*;
 import static org.junit.Assert.*;

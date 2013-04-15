@@ -1,4 +1,4 @@
-package com.isanak.bladeworks.shared.model;
+package com.github.isanakamishiro.bladeworks.shared.model;
 
 import org.slim3.tester.AppEngineTestCase;
 import org.junit.Test;

@@ -1,8 +1,8 @@
 package com.github.isanakamishiro.bladeworks.client.inject;
 
-import com.github.isanakamishiro.bladeworks.client.bladelist.BladeListPlace;
 import com.github.isanakamishiro.bladeworks.client.framework.AppActivityMapper;
 import com.github.isanakamishiro.bladeworks.client.framework.AppPlaceHistoryMapper;
+import com.github.isanakamishiro.bladeworks.client.top.TopPlace;
 import com.google.gwt.activity.shared.ActivityManager;
 import com.google.gwt.activity.shared.ActivityMapper;
 import com.google.gwt.inject.client.AbstractGinModule;
@@ -26,7 +26,7 @@ public class MvpModule extends AbstractGinModule {
 		// bind(Place.class).annotatedWith(Names.named("default")).to(
 		// BladeCreationPlace.class);
 		bind(Place.class).annotatedWith(Names.named("default")).to(
-				BladeListPlace.class);
+				TopPlace.class);
 	}
 
 	@Provides
