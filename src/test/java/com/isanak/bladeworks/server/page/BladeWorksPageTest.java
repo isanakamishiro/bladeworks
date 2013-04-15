@@ -8,7 +8,8 @@ import org.junit.Test;
 import scenic3.ScenicPage;
 import scenic3.tester.PageTestCase;
 
-import com.isanak.bladeworks.server.controller.AppUrls;
+import com.github.isanakamishiro.bladeworks.server.controller.AppUrls;
+import com.github.isanakamishiro.bladeworks.server.page.BladeWorksPage;
 
 public class BladeWorksPageTest extends PageTestCase {
     static final String baseUrl = "/bladeworks/";

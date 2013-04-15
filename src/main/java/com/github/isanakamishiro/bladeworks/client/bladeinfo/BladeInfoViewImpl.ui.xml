@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:b="urn:import:com.github.gwtbootstrap.client.ui"
+	xmlns:bb="urn:import:com.github.gwtbootstrap.client.ui.base">
+	<ui:with type="com.github.isanakamishiro.bladeworks.client.resources.IconResources"
+		field="res" />
+
+	<ui:style>
+		.icon {
+			margin-right: 2px;
+		}
+	</ui:style>
+
+	<g:FlowPanel>
+		<b:FluidContainer ui:field="container">
+			<b:PageHeader subtext="Excalibur">聖剣 エクスカリバー</b:PageHeader>
+			<b:Emphasis>いま常勝の王は高らかに、手に執る奇跡の真名を謳う。其は約束された勝利の剣</b:Emphasis>
+			<b:Paragraph>
+				<br />
+			</b:Paragraph>
+
+			<b:Well>
+				<b:Paragraph>
+					<b:Strong>攻撃力：</b:Strong>
+					<b:Badge>99,999</b:Badge>
+				</b:Paragraph>
+				<b:Paragraph>
+					<b:Label type="SUCCESS">レア</b:Label>
+					<b:Label type="IMPORTANT">伝説武器</b:Label>
+					<b:Label>対霊体補正</b:Label>
+					<b:Label>事象確率補正</b:Label>
+				</b:Paragraph>
+			</b:Well>
+
+			<!-- <b:Heading size="6">属性</b:Heading> -->
+			<b:Well size="SMALL">
+				<b:Tooltip text="火属性">
+					<b:Image addStyleNames="{style.icon}" resource="{res.fire}"></b:Image>
+				</b:Tooltip>
+				<b:Badge>50</b:Badge>
+				<b:Tooltip text="水属性">
+					<b:Image addStyleNames="{style.icon}" resource="{res.water}"></b:Image>
+				</b:Tooltip>
+				<b:Badge>50</b:Badge>
+				<b:Tooltip text="風属性">
+					<b:Image addStyleNames="{style.icon}" resource="{res.lightning}"></b:Image>
+				</b:Tooltip>
+				<b:Badge>50</b:Badge>
+				<b:Tooltip text="龍属性">
+					<b:Image addStyleNames="{style.icon}" resource="{res.dragon}"></b:Image>
+				</b:Tooltip>
+				<b:Badge>50</b:Badge>
+				<b:Tooltip text="光属性">
+					<b:Image addStyleNames="{style.icon}" resource="{res.light}"></b:Image>
+				</b:Tooltip>
+				<b:Badge>100</b:Badge>
+				<b:Tooltip text="闇属性">
+					<b:Image addStyleNames="{style.icon}" resource="{res.dark}"></b:Image>
+				</b:Tooltip>
+				<b:Badge>0</b:Badge>
+			</b:Well>
+
+			<!-- <b:Heading size="6">特殊能力</b:Heading> -->
+			<b:Well size="SMALL">
+				<bb:UnorderedList>
+					<bb:ListItem>
+						<b:Paragraph>攻撃対象をグループ範囲で指定できる</b:Paragraph>
+					</bb:ListItem>
+					<bb:ListItem>
+						<b:Paragraph>直接攻撃時に相手の反撃を受けない</b:Paragraph>
+					</bb:ListItem>
+					<bb:ListItem>
+						<b:Paragraph>攻撃時に魔力を消費する</b:Paragraph>
+					</bb:ListItem>
+				</bb:UnorderedList>
+			</b:Well>
+
+		</b:FluidContainer>
+
+	</g:FlowPanel>
+</ui:UiBinder>

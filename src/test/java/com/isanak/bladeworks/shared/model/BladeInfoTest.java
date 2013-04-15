@@ -2,6 +2,9 @@ package com.isanak.bladeworks.shared.model;
 
 import org.slim3.tester.AppEngineTestCase;
 import org.junit.Test;
+
+import com.github.isanakamishiro.bladeworks.shared.model.BladeInfo;
+
 import static org.junit.Assert.*;
 import static org.hamcrest.CoreMatchers.*;
 
