@@ -6,6 +6,7 @@ import com.github.isanakamishiro.bladeworks.client.bladeinfo.BladeInfoPlace;
 import com.github.isanakamishiro.bladeworks.client.bladeinfo.BladeInfoView;
 import com.github.isanakamishiro.bladeworks.client.bladelist.BladeListPlace;
 import com.github.isanakamishiro.bladeworks.client.bladelist.BladeListView;
+import com.github.isanakamishiro.bladeworks.client.resources.BladeWorksResources;
 import com.github.isanakamishiro.bladeworks.client.top.TopPlace;
 import com.github.isanakamishiro.bladeworks.client.top.TopView;
 import com.google.gwt.activity.shared.ActivityManager;
@@ -34,7 +35,11 @@ public interface ClientInjector extends Ginjector {
 
 	@Named("default")
 	Place getDefaultPlace();
-
+	
+	// Application ClientBundle
+	@Named("app")
+	BladeWorksResources getAppResources();
+	
 	// View Injection Method
 
 	TopView getTopView();

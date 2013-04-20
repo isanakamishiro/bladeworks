@@ -14,6 +14,7 @@
  *******************************************************************************/
 package com.github.isanakamishiro.bladeworks.client;
 
+import com.github.gwtbootstrap.client.ui.NavLink;
 import com.github.isanakamishiro.bladeworks.client.inject.ClientInjector;
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.core.client.GWT;
@@ -32,7 +33,7 @@ import com.google.gwt.user.client.ui.Widget;
 public class BladeWorks extends Composite implements EntryPoint {
 
 	ClientInjector injector;
-	
+
 	@UiField(provided = true)
 	SimplePanel main;
 
@@ -49,16 +50,19 @@ public class BladeWorks extends Composite implements EntryPoint {
 
 		final ClientInjector injector = GWT.create(ClientInjector.class);
 
+		injector.getAppResources().bladeworksCss().ensureInjected();
+
 		main = injector.getContentsPanel();
 
 		initWidget(binder.createAndBindUi(this));
 
 		injector.getActivityManager();
 
+		// RootPanel.get().add(this);
 		RootPanel.get("contents").add(this);
 
 		injector.getPlaceHistoryHandler().handleCurrentHistory();
-		
+
 		this.injector = injector;
 
 	}
@@ -68,4 +72,15 @@ public class BladeWorks extends Composite implements EntryPoint {
 		injector.getPlaceController().goTo(injector.getTopPlace());
 	}
 
+	@UiHandler("makeLink")
+	public void onMakeLinkClick(ClickEvent event) {
+		injector.getPlaceController().goTo(injector.getBladeCreationPlace());
+	}
+
+	@UiHandler("listLink")
+	public void onListLinkClick(ClickEvent event) {
+		injector.getPlaceController().goTo(injector.getBladeListPlace());
+	}
+
+	
 }

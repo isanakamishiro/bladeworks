@@ -6,10 +6,12 @@ import com.github.isanakamishiro.bladeworks.client.bladeinfo.BladeInfoView;
 import com.github.isanakamishiro.bladeworks.client.bladeinfo.BladeInfoViewImpl;
 import com.github.isanakamishiro.bladeworks.client.bladelist.BladeListView;
 import com.github.isanakamishiro.bladeworks.client.bladelist.BladeListViewImpl;
+import com.github.isanakamishiro.bladeworks.client.resources.BladeWorksResources;
 import com.github.isanakamishiro.bladeworks.client.top.TopView;
 import com.github.isanakamishiro.bladeworks.client.top.TopViewImpl;
 import com.google.gwt.inject.client.AbstractGinModule;
 import com.google.inject.Singleton;
+import com.google.inject.name.Names;
 
 public class AppModule extends AbstractGinModule {
 
@@ -25,6 +27,8 @@ public class AppModule extends AbstractGinModule {
 		bind(BladeListView.class).to(BladeListViewImpl.class).in(
 				Singleton.class);
 
+		bind(BladeWorksResources.class).annotatedWith(Names.named("app"))
+				.to(BladeWorksResources.class).in(Singleton.class);
 	}
 
 }

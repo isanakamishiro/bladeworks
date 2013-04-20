@@ -4,15 +4,32 @@
 	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:b="urn:import:com.github.gwtbootstrap.client.ui">
 	<ui:style>
 		.header {
-			text-align: center;
-			text-shadow: 0 1px 3px rgba(255, 255, 255, .4), 0 0 30px
-				rgba(255, 255, 255, .075);
+			text-align: center; <!--
+			text-shadow: 0 1px 3px rgba(255, 255, 255, .4), 0 0 30px -->   
+						   <!--    				   rgba(255, 255, 255, .075); -->
+			background: rgb(152, 190, 222); /* Old browsers */
+			background: -moz-linear-gradient(-45deg, rgba(152, 190, 222, 1) 0%,
+				rgba(222, 239, 255, 1) 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(152
+				, 190, 222, 1)), color-stop(100%, rgba(222, 239, 255, 1)));
+			/* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(-45deg, rgba(152, 190, 222, 1) 0%,
+				rgba(222, 239, 255, 1) 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(-45deg, rgba(152, 190, 222, 1) 0%,
+				rgba(222, 239, 255, 1) 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(-45deg, rgba(152, 190, 222, 1) 0%,
+				rgba(222, 239, 255, 1) 100%); /* IE10+ */
+			background: linear-gradient(135deg, rgba(152, 190, 222, 1) 0%,
+				rgba(222, 239, 255, 1) 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient(  startColorstr='#98bede',
+				endColorstr='#deefff', GradientType=1);
+			/* IE6-9 fallback on horizontal gradient */
 		}
 	</ui:style>
 
 	<g:FlowPanel>
-		<b:FluidContainer addStyleNames="{style.header}">
-			<b:Hero>
+		<b:FluidContainer>
+			<b:Hero addStyleNames="{style.header}">
 				<b:Heading size="1" showOn="DESKTOP" subtext="I am Ben.">体はなめこで出来ている。</b:Heading>
 				<b:Heading size="2" showOn="TABLET" subtext="I am Ben.">体はなめこで出来ている。</b:Heading>
 				<b:Heading size="3" showOn="PHONE" subtext="I am Ben.">体はなめこで出来ている。</b:Heading>
@@ -30,7 +47,7 @@
 								<b:Heading size="3" subtext="Blade Works">剣製</b:Heading>
 								<hr />
 								<b:Paragraph>
-									体は剣で出来ているような気がするがどうやら気のせいだったようだ。
+									体は剣で出来ているような気がするがどうやら気のせいだったようだ。メインコンテンツ。
 								</b:Paragraph>
 								<b:Button ui:field="bladeCreationButton2" icon="DOUBLE_ANGLE_RIGHT"
 									iconPosition="RIGHT">詳細</b:Button>
@@ -41,7 +58,7 @@
 								<b:Heading size="3" subtext="Blade List">一覧</b:Heading>
 								<hr />
 								<b:Paragraph>
-									おまえは今まで食ったパンの枚数をおぼえているのか？
+									おまえは今まで食ったパンの枚数をおぼえているのか？作成した剣の一覧。
 								</b:Paragraph>
 								<b:Button ui:field="bladeListButton" icon="DOUBLE_ANGLE_RIGHT"
 									iconPosition="RIGHT">詳細</b:Button>
@@ -52,8 +69,9 @@
 								<b:Heading size="3" subtext="About">補足</b:Heading>
 								<hr />
 								<b:Paragraph>
-									「ページ分けする必要があるのか？」「さあ・・・」
+									「ページ分けする必要があるのか？」「さあ・・・」雑記。
 								</b:Paragraph>
+								<br />
 								<b:Button ui:field="AboutButton" icon="DOUBLE_ANGLE_RIGHT"
 									iconPosition="RIGHT">詳細</b:Button>
 							</b:Caption>
